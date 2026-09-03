@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headr">
+        <h1>Student Application Management System</h1>
+        <h3>Register and manage student applications</h3>
+    </div>
+
+    <div class="form">
+        <h4>Enter Student Details:</h4>
+        <div class="studentdetail">
+            <input type="text" id = "name" placeholder="Enter Student Name">
+            <input type="email" id="email" placeholder="Enter Student Email">
+            <input type="text" id="phnum" placeholder="Enter Student Phone Number">
+            <input type="date" id="dob" placeholder="Enter Student Date of Birth">
+            <button type="radio" id="male" name="gender">Male</button>
+            <button type="radio" id="female" name="gender">Female</button>
+        </div>
+        <h4>Select the Course:</h4>
+        <div class="coursebox">
+            <select id="course">
+                <option value="course1">Select Course</option>
+                <option value="course2">Web Development</option>
+                <option value="course3">UI/UX</option>
+                <option value="course4">Data Analytics</option>
+                <option value="course5">MERN Stack</option>
+                <option value="course6">Cloud Computing</option>
+            </select>
+        </div>
+        <h4>Select the Skills:</h4>
+        <div class="skillsbox">
+            <input type="checkbox" id="skill1" name="skills" value="HTML">
+            <label for="skill1">HTML</label>
+            <input type="checkbox" id="skill2" name="skills" value="CSS">
+            <label for="skill2">CSS</label>
+            <input type="checkbox" id="skill3" name="skills" value="JavaScript">
+            <label for="skill3">JavaScript</label>
+            <input type="checkbox" id="skill4" name="skills" value="Git">
+            <label for="skill4">Git</label>
+            <input type="checkbox" id="skill5" name="skills" value="React">
+            <label for="skill5">React</label>
+            <input type="checkbox" id="skill6" name="skills" value="Node.js">
+            <label for="skill6">Node.js</label>
+        </div>
+        <h4>About the Student:</h4>
+        <div class="aboutstudent">
+            <textarea id="about" placeholder="Maximum 200 characters"></textarea>
+        </div>
+        <h4>Upload Student Profile Picture:</h4>
+        <div class="profilepic">
+            <input type="file" id="profilepic" accept="image/*">
+        </div>
+
+        <div class="formbutton">
+            <button id="submit">Register Student</button>
+            <button id="reset">Reset <Form></Form></button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
